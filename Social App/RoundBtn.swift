@@ -1,14 +1,14 @@
 //
-//  FancyView.swift
+//  RoundBtn.swift
 //  Social App
 //
-//  Created by Abed on 19/01/2017.
+//  Created by Abed on 20/01/2017.
 //  Copyright © 2017 Webiaturist. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+class RoundBtn: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,4 +20,9 @@ class FancyView: UIView {
         
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
+    }
 }

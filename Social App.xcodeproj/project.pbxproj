@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4E317EF57E66D2ECF98EBE44 /* Pods_Social_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77727B22E781CDE3A8890CF8 /* Pods_Social_App.framework */; };
 		B19486491E3139C500A6A71E /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19486481E3139C500A6A71E /* FancyView.swift */; };
+		B19962941E32732F00DC0836 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19962931E32732F00DC0836 /* Constants.swift */; };
+		B19962961E327C4200DC0836 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19962951E327C4200DC0836 /* RoundBtn.swift */; };
+		B19962981E327DD000DC0836 /* CoolField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19962971E327DD000DC0836 /* CoolField.swift */; };
 		B1B22C5B1E2FC3850057A06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B22C5A1E2FC3850057A06C /* AppDelegate.swift */; };
 		B1B22C5D1E2FC3850057A06C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B22C5C1E2FC3850057A06C /* SignInVC.swift */; };
 		B1B22C601E2FC3850057A06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B22C5E1E2FC3850057A06C /* Main.storyboard */; };
@@ -17,7 +20,6 @@
 		B1B22C681E2FC3850057A06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B22C661E2FC3850057A06C /* LaunchScreen.storyboard */; };
 		B1B22C731E2FC3850057A06C /* Social_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B22C721E2FC3850057A06C /* Social_AppTests.swift */; };
 		B1B22C7E1E2FC4970057A06C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1B22C7D1E2FC4970057A06C /* GoogleService-Info.plist */; };
-		FF7906C45FE5D81C461D9407 /* Pods_Social_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA06632D0DB513BFF6E6D642 /* Pods_Social_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BFC1F1A5E73C62016284317 /* Pods-Social AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social AppTests/Pods-Social AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5A5DD3777B8AFB26B1D156C8 /* Pods-Social AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social AppTests/Pods-Social AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		77727B22E781CDE3A8890CF8 /* Pods_Social_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CF4DCC24A14E8BEC531CA1 /* Pods-Social App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social App/Pods-Social App.release.xcconfig"; sourceTree = "<group>"; };
 		A66634FA6AB703286F14B145 /* Pods-Social App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social App/Pods-Social App.debug.xcconfig"; sourceTree = "<group>"; };
 		B19486481E3139C500A6A71E /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		B19962931E32732F00DC0836 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B19962951E327C4200DC0836 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		B19962971E327DD000DC0836 /* CoolField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolField.swift; sourceTree = "<group>"; };
 		B1B22C571E2FC3850057A06C /* Social App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B22C5A1E2FC3850057A06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1B22C5C1E2FC3850057A06C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7906C45FE5D81C461D9407 /* Pods_Social_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				B19486481E3139C500A6A71E /* FancyView.swift */,
+				B19962951E327C4200DC0836 /* RoundBtn.swift */,
+				B19962971E327DD000DC0836 /* CoolField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -102,6 +106,14 @@
 				B1B22C5C1E2FC3850057A06C /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		B19962921E32731E00DC0836 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B19962931E32732F00DC0836 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		B1B22C4E1E2FC3850057A06C = {
@@ -127,6 +139,7 @@
 		B1B22C591E2FC3850057A06C /* Social App */ = {
 			isa = PBXGroup;
 			children = (
+				B19962921E32731E00DC0836 /* Util */,
 				B15F0CD11E2FC9CF002F31D4 /* Model */,
 				B15F0CD21E2FC9D8002F31D4 /* View */,
 				B15F0CD31E2FC9DD002F31D4 /* Controller */,
@@ -155,8 +168,6 @@
 			children = (
 				A66634FA6AB703286F14B145 /* Pods-Social App.debug.xcconfig */,
 				79CF4DCC24A14E8BEC531CA1 /* Pods-Social App.release.xcconfig */,
-				1BFC1F1A5E73C62016284317 /* Pods-Social AppTests.debug.xcconfig */,
-				5A5DD3777B8AFB26B1D156C8 /* Pods-Social AppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -188,12 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1B22C7A1E2FC3850057A06C /* Build configuration list for PBXNativeTarget "Social AppTests" */;
 			buildPhases = (
-				467CE8BF251B56B64A250A94 /* [CP] Check Pods Manifest.lock */,
 				B1B22C6A1E2FC3850057A06C /* Sources */,
 				B1B22C6B1E2FC3850057A06C /* Frameworks */,
 				B1B22C6C1E2FC3850057A06C /* Resources */,
-				5DD3172CE172027F39924007 /* [CP] Embed Pods Frameworks */,
-				B867D103251FF6DF43E3C67A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,36 +292,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social App/Pods-Social App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		467CE8BF251B56B64A250A94 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5DD3172CE172027F39924007 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social AppTests/Pods-Social AppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8110FBF4CB5492F26F572A17 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,21 +305,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social App/Pods-Social App-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B867D103251FF6DF43E3C67A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social AppTests/Pods-Social AppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED57C994C388339CD4A7C170 /* [CP] Check Pods Manifest.lock */ = {
@@ -366,8 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19962941E32732F00DC0836 /* Constants.swift in Sources */,
 				B1B22C5D1E2FC3850057A06C /* SignInVC.swift in Sources */,
 				B1B22C5B1E2FC3850057A06C /* AppDelegate.swift in Sources */,
+				B19962981E327DD000DC0836 /* CoolField.swift in Sources */,
+				B19962961E327C4200DC0836 /* RoundBtn.swift in Sources */,
 				B19486491E3139C500A6A71E /* FancyView.swift in Sources */,
 				B1B22C631E2FC3850057A06C /* Social_App.xcdatamodeld in Sources */,
 			);
@@ -534,7 +500,6 @@
 		};
 		B1B22C7B1E2FC3850057A06C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BFC1F1A5E73C62016284317 /* Pods-Social AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,7 +515,6 @@
 		};
 		B1B22C7C1E2FC3850057A06C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A5DD3777B8AFB26B1D156C8 /* Pods-Social AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
