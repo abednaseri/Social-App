@@ -10,12 +10,27 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailField: CoolField!
+    @IBOutlet weak var passwordField: CoolField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+
     }
 
     @IBAction func facebookBtnPressed(_ sender: Any) {
@@ -23,11 +38,11 @@ class SignInVC: UIViewController {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil{
-                print("JESS: Unable to authenticate with Facebook - \(error)")
+                print("ABED: Unable to authenticate with Facebook - \(error)")
             } else if result?.isCancelled == true{
-                print("JESS: User cancelled authentication")
+                print("ABED: User cancelled authentication")
             } else{
-                print("JESS: Successfuly authenticated")
+                print("ABED: Successfuly authenticated")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential: credential)
             }
@@ -38,12 +53,57 @@ class SignInVC: UIViewController {
     func firebaseAuth(credential: FIRAuthCredential){
         FIRAuth.auth()?.signIn(with: credential, completion: { (user,error) in
             if error != nil{
-                print("JESS: Unable to authenticate with Firebase. - \(error)")
+                print("ABED: Unable to authenticate with Firebase. - \(error)")
             } else {
-                print("JESS: Successfully authenticated with FireBase.")
+                print("ABED: Successfully authenticated with FireBase.")
+                if let user = user{
+                    self.completeSignInWithKeyChain(id: user.uid)
+                }
             }
             
         })
     }
+    
+    
+    @IBAction func SignInPressed(_ sender: Any) {
+        if let email = emailField.text, let pass = passwordField.text{
+            FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
+                if error == nil{
+                    print("Abed: User successfull loging with Email Firebase")
+                    if let user = user{
+                        self.completeSignInWithKeyChain(id: user.uid)
+                    }
+                }else{
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pass, completion: { (user, error) in
+                        if error != nil{
+                            print("Abed: unable to authenticate Email with Firebase")
+                        }else{
+                            print("Abed: Successfully authenticated with Firebase using Email")
+                            if let user = user{
+                                self.completeSignInWithKeyChain(id: user.uid)
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    }
+    
+    
+    func completeSignInWithKeyChain(id: String){
+        let KeychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("ABED: Data saved to keycchain - \(KeychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

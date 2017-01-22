@@ -20,6 +20,7 @@
 		B1B22C681E2FC3850057A06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B22C661E2FC3850057A06C /* LaunchScreen.storyboard */; };
 		B1B22C731E2FC3850057A06C /* Social_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B22C721E2FC3850057A06C /* Social_AppTests.swift */; };
 		B1B22C7E1E2FC4970057A06C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1B22C7D1E2FC4970057A06C /* GoogleService-Info.plist */; };
+		B1E98E0C1E34D3FD00CDC2E0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98E0B1E34D3FD00CDC2E0 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B1B22C721E2FC3850057A06C /* Social_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_AppTests.swift; sourceTree = "<group>"; };
 		B1B22C741E2FC3850057A06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B22C7D1E2FC4970057A06C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1E98E0B1E34D3FD00CDC2E0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		DA06632D0DB513BFF6E6D642 /* Pods_Social_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				B1B22C5C1E2FC3850057A06C /* SignInVC.swift */,
+				B1E98E0B1E34D3FD00CDC2E0 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B1B22C5D1E2FC3850057A06C /* SignInVC.swift in Sources */,
 				B1B22C5B1E2FC3850057A06C /* AppDelegate.swift in Sources */,
 				B19962981E327DD000DC0836 /* CoolField.swift in Sources */,
+				B1E98E0C1E34D3FD00CDC2E0 /* FeedVC.swift in Sources */,
 				B19962961E327C4200DC0836 /* RoundBtn.swift in Sources */,
 				B19486491E3139C500A6A71E /* FancyView.swift in Sources */,
 				B1B22C631E2FC3850057A06C /* Social_App.xcdatamodeld in Sources */,
